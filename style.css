@@ -1,0 +1,120 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(vasily.jpg);
+
+}
+
+
+.content{
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: white;
+
+    box-shadow: 2,2,2,rgba(48, 221, 140, 0.009);
+    border-radius: 10px;
+
+}
+
+.content h1{
+
+   padding: 25px;
+   line-height: 20px;
+   word-spacing: 1.2px;
+
+}
+.form_con{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    
+    
+    }
+
+.content{
+
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+}
+
+.button{
+display: flex;
+justify-content: flex-end;
+font-size: 18px;
+margin: 5px 8px;
+padding: 5px;
+
+
+}
+button{
+    color: black;
+    background-color: rgb(175, 243, 18);
+    font-size: larger;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 3,2,1,0.5;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color: gold;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+input,select,option {
+
+ padding: 6px 10px;   
+ border: 1px solid ;
+ border-radius: 10px;
+ margin: 2px;
+
+}
+option{
+    color:white;
+    background-color: black;
+    
+
+}
+
+
+
+input,textarea,select:focus{
+    outline-color: red;
+}
+
+.aarea{
+    padding: 6px 10px;   
+ border: 1px solid ;
+ border-radius: 10px;
+ grid-column: 1/ span 2;
+ width: 50%;
+    
+}
+@media (max-width:460px)
+{
+    .aarea{
+    grid-column : 1/span 1;
+    }
+}
+
+@media (max-width:1200px)
+{
+    .content{
+        max-width: 650px;
+    }
+
+}
